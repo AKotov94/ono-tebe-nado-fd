@@ -1,1 +1,145 @@
-/* место для вашего кода */
+header {
+    min-height: 293px;
+    display: grid;
+    padding: 5px 50px 0;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24.3px;
+}
+
+.logo__header{
+    width: 130px;
+    height: auto;
+}
+
+.header__list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+.header__list_non_decoration {
+    list-style-type: none;
+}
+
+.header__list_decoration {
+    list-style-type: circle;
+    padding-left: 8px;
+}
+
+.link_decoration {
+    text-underline-offset: 4px;
+}
+
+.adress {
+    width: 240px;
+    text-align: left;
+    justify-self: end;
+    font-style: normal;
+}
+
+.adress__span {
+    display: block;
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 757px;
+    position: relative;
+}
+
+h1 {
+    padding: 165px 50px 0;
+}
+
+.cover__title {
+width: 100%;
+color: #fff;
+text-transform: uppercase;
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 100px;
+letter-spacing: 0.3em;
+line-height: 115px;
+z-index: 1;
+}
+
+.title__span{
+    display: block;
+}
+
+.title__span_center {
+    text-align: center;
+    margin: 50px 0;
+    /* Компенсируем кернинг последнего элемента*/
+    margin-right: -0.3em;
+}
+
+.title__span_right {
+    text-align: right;
+    /* Компенсируем кернинг последнего элемента*/
+    margin-right: -0.3em;
+}
+
+.description {
+    padding: 0 50px 50px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    z-index: 1;
+}
+
+.description__subline {
+    font-weight: 400;
+    word-spacing: 20px;
+}
+
+/* В интернете написано, что color, text-transform и др. свойства текста button наследует.
+Но тут, почему-то, этого не произошло */
+.description__button {
+    display: inline-block;
+    min-width: 256px;
+    min-height: 51px;
+    margin-left: auto;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    border: #fff solid 1px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+}
+.lots {
+    margin: 180px;
+}
+
+.about {
+    margin-top: 120px;
+}
+
+footer {
+    margin-top: 180px;
+}
