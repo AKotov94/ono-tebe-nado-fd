@@ -1,145 +1,333 @@
 header {
-    min-height: 293px;
-    display: grid;
-    padding: 5px 50px 0;
-    grid-template-columns: 1fr min-content 1fr;
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24.3px;
+  min-height: 293px;
+  display: grid;
+  padding: 5px 50px 0;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
+  box-sizing: content-box;
 }
 
-.logo__header{
-    width: 130px;
-    height: auto;
+.header__logo{
+  /* Значения по PerfectPixel */
+  width: 135px;
+  height: 100px;
 }
 
-.header__list {
-    display: flex;
-    justify-content: flex-start;
-    gap: 32px;
-}
-
-.header__list_non_decoration {
-    list-style-type: none;
-}
-
-.header__list_decoration {
-    list-style-type: circle;
-    padding-left: 8px;
+.header__menu {
+  display: flex;
+  justify-content: flex-start;
+  gap: 32px;
 }
 
 .link_decoration {
-    text-underline-offset: 4px;
+  text-underline-offset: 4px;
 }
 
-.adress {
-    width: 240px;
-    text-align: left;
-    justify-self: end;
-    font-style: normal;
+.header__links-list-item {
+  list-style-type: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.header__address {
+  width: 240px;
+  justify-self: end
+}
+
+.text_left {
+  text-align: left;
 }
 
 .adress__span {
-    display: block;
+  display: block;
 }
 
 .cover {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: url(../images/cover.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 757px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 757px;
+  position: relative;
 }
 
 h1 {
-    padding: 165px 50px 0;
+  padding: 165px 50px 0;
 }
 
 .cover__title {
-width: 100%;
-color: #fff;
-text-transform: uppercase;
-font-family: 'Raleway', sans-serif;
-font-weight: 700;
-font-size: 100px;
-letter-spacing: 0.3em;
-line-height: 115px;
-z-index: 1;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  letter-spacing: 0.3em;
+  line-height: 115px;
+  z-index: 1;
 }
 
 .title__span{
-    display: block;
+  display: block;
 }
 
 .title__span_center {
-    text-align: center;
-    margin: 50px 0;
-    /* Компенсируем кернинг последнего элемента*/
-    margin-right: -0.3em;
+  text-align: center;
+  /* Значение по PerfectPixel */
+  margin: 20px 0;
+  /* Компенсируем кернинг последнего элемента*/
+  margin-right: -0.3em;
 }
 
 .title__span_right {
-    text-align: right;
-    /* Компенсируем кернинг последнего элемента*/
-    margin-right: -0.3em;
+  text-align: right;
+  /* Компенсируем кернинг последнего элемента*/
+  margin-right: -0.3em;
 }
 
 .description {
-    padding: 0 50px 50px;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    font-size: 22px;
-    line-height: 28px;
-    z-index: 1;
+  padding: 0 50px 50px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.description__text {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
 }
 
 .description__subline {
-    font-weight: 400;
-    word-spacing: 20px;
+  /* Значение по PerfectPixel */
+  word-spacing: 18px;
 }
 
-/* В интернете написано, что color, text-transform и др. свойства текста button наследует.
-Но тут, почему-то, этого не произошло */
 .description__button {
-    display: inline-block;
-    min-width: 256px;
-    min-height: 51px;
-    margin-left: auto;
-    background-color: transparent;
-    text-transform: uppercase;
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 28px;
-    border: #fff solid 1px;
-    box-sizing: border-box;
-    padding: 0;
+  display: inline-block;
+  min-width: 256px;
+  min-height: 51px;
+  margin-left: auto;
+  background-color: transparent;
+  font-weight: 500;
+  border: #fff solid 1px;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
 }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+}
+
 .lots {
-    margin: 180px;
+  margin: 180px 24px 0;
+}
+
+.lots__heading_margin {
+  margin-left: 40px;
+}
+
+.lots__list {
+  display: flex;
+  gap: 25px;
+  margin-top: 27px;
+}
+
+.lots__list_item {
+  min-width: 334px;
+  min-height: 596px;
+  list-style-type: none;
+}
+
+.cards_film{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+  background-image: url(../images/card-lot-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.cards_book{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+  background-image: url(../images/card-lot-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.cards_picture{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: auto;
+  background-image: url(../images/card-lot-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.card_heading {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-decoration: underline;
+  padding: 48px 40px 0;
+  z-index: 1;
+}
+
+.card_text {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  margin-top: auto;
+  padding: 0 40px 48px;
+  z-index: 1;
+}
+
+.link_more {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  /* Значение по PerfectPixel */
+  line-height: 135%;
+  margin: 30px 0 0 40px;
 }
 
 .about {
-    margin-top: 120px;
+  margin: 120px 24px 0;
+  display: grid;
+  grid-template-columns: 334px auto;
+  grid-template-rows: auto;
+  /* Значениz по PerfectPixel */
+  row-gap: 5px;
+  column-gap: 25px;
+}
+
+.about__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%; 
+  background-color: black;
+  margin-top: 35px;
+   justify-self: center;
+}
+
+.logo_white {
+  width: 148px;
+  height: auto;
+}
+
+.about__header {
+  grid-column-start: 2;
+  margin-top: 35px;
+  align-self: center;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 2;
+  gap: 24px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.paragraph_1 {
+  width: 688px;
+  height: auto;
+}
+
+.paragraph_2 {
+  width: 693px;
+  height: auto;
 }
 
 footer {
-    margin-top: 180px;
+  margin: 180px 50px 0;
+  min-height: 180px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
+}
+
+.footer__social-list-item { 
+  width: 48px;
+  height: auto;
+  list-style-type: none;
+}
+
+.footer__address {
+  width: 265px;
+  justify-self: start;
+
+}
+
+.footer__list {
+  flex-direction: column;
+  gap: 0;
+}
+
+.footer__list_item {
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  line-height: 22.3px;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+  justify-content: end;
 }
