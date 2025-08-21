@@ -152,9 +152,11 @@
   display: flex;
   gap: 25px;
   margin-top: 27px;
+  flex-wrap: wrap;
 }
 
 .lots__card-list-item {
+  flex-basis: 0;
   min-width: 334px;
   min-height: 596px;
   list-style-type: none;
