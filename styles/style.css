@@ -6,14 +6,14 @@
   align-items: center;
 }
 
-.header__links-list {
+.navigation__links-list {
   list-style-type: circle;
   display: flex;
   justify-content: flex-start;
   gap: 32px;
 }
 
-.header__links-list-item,
+.navigation__links-list-item,
 .address {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -21,15 +21,15 @@
   line-height: 24.3px;
 }
 
-.header__links-list-item_no-bullit {
+.address__links-list-item_no-bullit {
   list-style-type: none;
 }
 
-.header__link{
+.decorate__link {
   text-underline-offset: 4px;
 }
 
-.header__link_active{
+.address__link_active {
   text-decoration: none;
 }
 
