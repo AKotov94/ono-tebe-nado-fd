@@ -244,13 +244,13 @@
   justify-content: center;
   width: 240px;
   height: 240px;
-  border-radius: 50%; 
+  border-radius: 50%;
   background-color: black;
   margin-top: 30px;
   justify-self: center;
 }
 
-.about__logo-image{
+.about__logo-image {
   width: 148px;
   height: auto;
 }
