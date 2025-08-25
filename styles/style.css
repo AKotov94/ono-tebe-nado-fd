@@ -29,7 +29,7 @@
   text-underline-offset: 4px;
 }
 
-.address__link_active {
+.navigation__link_active {
   text-decoration: none;
 }
 
